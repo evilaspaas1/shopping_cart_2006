@@ -41,4 +41,9 @@ class ShoppingCart
       product.category == category
     end
   end
+
+  def percentage_occupied
+    cap_percent = (total_number_of_products.to_f / @capacity)* 100
+    cap_percent.round(2)
+  end
 end
