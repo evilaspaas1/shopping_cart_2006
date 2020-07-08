@@ -19,4 +19,12 @@ class ShoppingCart
     @details[:capacity] = @capacity
     @details
   end
+
+  def total_number_of_products
+    total_products = []
+    @products.each do |product|
+      total_products << product.quantity
+    end
+    total_products.sum
+  end
 end
