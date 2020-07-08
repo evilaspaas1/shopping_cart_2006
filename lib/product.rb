@@ -19,4 +19,8 @@ class Product
   def is_hoarded?
     @is_hoarded
   end
+
+  def hoard
+    @is_hoarded = true
+  end
 end
