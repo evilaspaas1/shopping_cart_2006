@@ -13,4 +13,10 @@ class ShoppingCartTest < Minitest::Test
   def test_it_exists
     assert_instance_of ShoppingCart, @cart
   end
+
+  def test_it_has_attributes
+    assert_equal "King Soopers", @cart.name
+    assert_equal 30, @cart.capacity
+    assert_equal [], @cart.products
+  end
 end
